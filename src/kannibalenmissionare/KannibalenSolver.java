@@ -38,7 +38,7 @@ public class KannibalenSolver {
                     zustand.getAnzahlMissionareRechts(), zustand.getAnzahlKannibalenRechts() + 2, neuePositionBoot, zustand));
             zustaende.add(new Zustand(zustand.getAnzahlMissionareLinks() - 1, zustand.getAnzahlKannibalenLinks() - 1,
                     zustand.getAnzahlMissionareRechts() + 1, zustand.getAnzahlKannibalenRechts() + 1, neuePositionBoot, zustand));
-            // Lehrfahrt erlaubt:
+            // Leerfahrt erlaubt:
             zustaende.add(new Zustand(zustand.getAnzahlMissionareLinks(), zustand.getAnzahlKannibalenLinks(),
                     zustand.getAnzahlMissionareRechts(), zustand.getAnzahlKannibalenRechts(), neuePositionBoot, zustand));
         } else {
@@ -52,7 +52,7 @@ public class KannibalenSolver {
                     zustand.getAnzahlMissionareRechts(), zustand.getAnzahlKannibalenRechts() - 2, neuePositionBoot, zustand));
             zustaende.add(new Zustand(zustand.getAnzahlMissionareLinks() + 1, zustand.getAnzahlKannibalenLinks() + 1,
                     zustand.getAnzahlMissionareRechts() - 1, zustand.getAnzahlKannibalenRechts() - 1, neuePositionBoot, zustand));
-            // Lehrfahrt erlaubt:
+            // Leerfahrt erlaubt:
             zustaende.add(new Zustand(zustand.getAnzahlMissionareLinks(), zustand.getAnzahlKannibalenLinks(),
                     zustand.getAnzahlMissionareRechts(), zustand.getAnzahlKannibalenRechts(), neuePositionBoot, zustand));
         }
